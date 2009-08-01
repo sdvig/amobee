@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+	  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	  <title>Amobee</title>
+	  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+	  <!-- Jquery - Only for Presentation -->
+	  <script type="text/javascript" src="jquery.js"></script>
+	  <script type="text/javascript">
+		 $(document).ready(function(){
+			$("#advanced_filters .box").hide();
+			$("#advanced_filters .btn").click(function(){
+			  $("#advanced_filters .box").slideToggle("slow");
+			  $(this).toggleClass("active");
+			});
+		 });
+	   </script>
+	  <!-- Jquery - End -->
+   </head>
+   <body id="home">
+
+	  <!-- Header -->
+	  <div id="header">
+		 <h1><a href="#">Amobee | Analytics</a></h1>
+		 <ul id="navigation">
+			<li><a href="#">CMS</a></li>
+			<li><a href="#">Home</a></li>
+			<li class="last"><a href="#">Help</a></li>
+		 </ul>
+		 <h2>Report name</h2>
+	  </div>
+	  <!-- Header -->
+
+	  <!-- Main Content -->
+	  <div id="main">
+		 <p>Report description lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta ligulated mit eumauris rhoncus pulvinar tincidunt risus interdum. Suspendisse pharetra iaculis ultrices tortor merlijan minfago suspendisse coectetur irmel <a href="#">(More info)</a></p>
+
+		 <!-- Filters Form -->
+		 <form action="">
+
+			<!-- Buttons Panel -->
+			<div class="btns">
+			   <input class="cancel_btn_top" type="image" src="i/cancel_btn.gif" />
+			   <input class="run_btn" type="image" src="i/run_btn.gif" />
+			</div>
+			<!-- Buttons Panel -->
+
+			<!-- Simple Filters -->
+			<div id="simple_filters" class="frame">
+			   <!-- Corners -->
+			   <div class="tc"><div class="tl"><div class="tr"></div></div></div><div class="inframe">
+			   <!-- Corners -->
+
+			   <fieldset>
+				  <div class="left_column">
+					 <p class="slct"><label>Agency:</label><select><option>&nbsp;</option></select></p>
+					 <p class="slct last"><label>Advertiser:</label><select><option>&nbsp;</option></select></p>
+				  </div>
+				  <div class="right_column">
+					 <!-- Corners -->
+					 <div class="tl"><div class="tr"></div></div>
+					 <!-- Corners -->
+					 <p class="slct"><label>Campaign Status:</label><select><option>&nbsp;</option></select></p>
+					 <p class="slct last"><label>Campaign:</label><select><option>&nbsp;</option></select></p>
+					 <!-- Corners -->
+					 <div class="bl"><div class="br"></div></div>
+					 <!-- Corners -->
+				 </div>
+			   </fieldset>
+
+			   <fieldset class="last">
+				  <div class="left_column">
+					 <p class="slct"><label>Report format:</label><select><option>&nbsp;</option></select></p>
+					 <p class="slct"><label>Report level:</label><select><option>&nbsp;</option></select></p>
+					 <p class="slct last"><label>Time Resolution:</label><select><option>&nbsp;</option></select></p>
+				  </div>
+				  <div class="right_column">
+					 <!-- Corners -->
+					 <div class="tl"><div class="tr"></div></div>
+					 <!-- Corners -->
+					 <p class="slct"><label>Date Range:</label><select><option>&nbsp;</option></select></p>
+					 <p class="date"><label>From:</label><input type="text" /><a href="#"><img src="i/calendar.gif" alt="" /></a></p>
+					 <p class="date last"><label>To:</label><input type="text" /><a href="#"><img src="i/calendar.gif" alt="" /></a></p>
+					 <!-- Corners -->
+					 <div class="bl"><div class="br"></div></div>
+					 <!-- Corners -->
+				  </div>
+			   </fieldset>
+
+			   <!-- Corners -->
+			   </div><div class="bc"><div class="bl"><div class="br"></div></div></div>
+			   <!-- Corners -->
+
+			</div>
+			<!-- Simple Filters - End -->
+
+			<!-- Advanced Filters -->
+			<div class="frame" id="advanced_filters">
+			   <!-- Corners -->
+			   <div class="tc"><div class="tl"><div class="tr"></div></div></div><div class="inframe">
+			   <!-- Corners -->
+
+			   <h3 class="btn"><strong>Advanced Filters</strong><input id="refresh" type="button" value="Refresh Filters" /></h3>
+
+			   <!-- Hidden Content -->
+			   <div class="box">
+				  <fieldset>
+					 <div class="left_column">
+						<!-- Corners -->
+						<div class="tl"><div class="tr"></div></div>
+						<!-- Corners -->
+						<h4>Flights</h4>
+						<div class="inr">
+						   <p class="chk"><input type="checkbox" /><label>Flight coke 2008 Q3</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight coke zero Q2 more text here</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight mineral water Q2-Q4 and more text</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						</div>
+						<p class="panel"><a href="#">Select all</a><a href="#" class="deselect">Deselect all</a></p>
+						<!-- Corners -->
+						<div class="bl"><div class="br"></div></div>
+						<!-- Corners -->
+					 </div>
+					 <div class="right_column">
+						<!-- Corners -->
+						<div class="tl"><div class="tr"></div></div>
+						<!-- Corners -->
+						<h4>Flights</h4>
+						<div class="inr">
+						   <p class="chk"><input type="checkbox" /><label>Flight coke 2008 Q3</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight coke zero Q2 more text here</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight mineral water Q2-Q4 and more text</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						</div>
+						<p class="panel"><a href="#">Select all</a><a href="#" class="deselect">Deselect all</a></p>
+						<!-- Corners -->
+						<div class="bl"><div class="br"></div></div>
+						<!-- Corners -->
+					 </div>
+				  </fieldset>
+				  <fieldset class="last">
+					 <div class="left_column">
+						<!-- Corners -->
+						<div class="tl"><div class="tr"></div></div>
+						<!-- Corners -->
+						<h4>Flights</h4>
+						<div class="inr">
+						   <p class="chk"><input type="checkbox" /><label>Flight coke 2008 Q3</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight coke zero Q2 more text here</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight mineral water Q2-Q4 and more text</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						</div>
+						<p class="panel"><a href="#">Select all</a><a href="#" class="deselect">Deselect all</a></p>
+						<!-- Corners -->
+						<div class="bl"><div class="br"></div></div>
+						<!-- Corners -->
+					 </div>
+					 <div class="right_column">
+						<!-- Corners -->
+						<div class="tl"><div class="tr"></div></div>
+						<!-- Corners -->
+						<h4>Flights</h4>
+						<div class="inr">
+						   <p class="chk"><input type="checkbox" /><label>Flight coke 2008 Q3</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight coke zero Q2 more text here</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Flight mineral water Q2-Q4 and more text</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						   <p class="chk"><input type="checkbox" /><label>Myflight</label></p>
+						</div>
+						<p class="panel"><a href="#">Select all</a><a href="#" class="deselect">Deselect all</a></p>
+						<!-- Corners -->
+						<div class="bl"><div class="br"></div></div>
+						<!-- Corners -->
+					 </div>
+				  </fieldset>
+			   </div>
+
+			   <!-- Corners -->
+			   </div><div class="bc"><div class="bl"><div class="br"></div></div></div>
+			   <!-- Corners -->
+			</div>
+			<!-- Advanced Filters -->
+
+			<!-- Buttons Panel -->
+			<div class="btns">
+			   <input class="cancel_btn" type="image" src="i/cancel_btn.gif" />
+			   <input class="run_btn" type="image" src="i/run_btn.gif" />
+			</div>
+			<!-- Buttons Panel -->
+
+		 </form>
+	  </div>
+   </body>
+</html>

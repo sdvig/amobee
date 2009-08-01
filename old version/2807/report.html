@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+	  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	  <title>Amobee</title>
+	  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	 <!--[if lt IE 8]>
+			<style type="text/css" media="all">@import url('style_ie.css');</style>
+	<![endif]-->
+
+	  <!-- Jquery - Only for Presentation -->
+	  <script type="text/javascript" src="jquery.js"></script>
+	  <script type="text/javascript">
+		 $(document).ready(function(){
+			$("#report_values .box").hide();
+			$("#report_values .btn").click(function(){
+			  $("#report_values .box").slideToggle("slow");
+			  $(this).toggleClass("active");
+			});
+		 });
+	   </script>
+	  <!-- Jquery - End -->
+   </head>
+   <body id="report">
+
+	  <!-- Header -->
+	  <div id="header">
+		 <h1><a href="#">Amobee | Analytics</a></h1>
+		 <ul id="navigation">
+			<li><a href="#">CMS</a></li>
+			<li><a href="#">Home</a></li>
+			<li class="last"><a href="#">Help</a></li>
+		 </ul>
+		 <h2>Report name
+			<span id="date"><strong>Date Range:</strong> Apr 6, 2009 - May 6, 2009</span> 
+		</h2>
+	  </div>
+	  <!-- Header -->
+
+	  <!-- Main Content -->
+	  <div id="main">
+		
+		<!-- Buttons Panel -->
+		<div class="btns">
+		   <input class="back_reports_btn" type="image" src="i/back_reports_btn.gif" />
+		   <input class="run_again_btn" type="image" src="i/run_again_btn.gif" />
+			<ul id="export">
+				<li><strong>Export:</strong></li>
+				<li class="pdf"><a href="#">pdf</a></li>
+				<li class="excel"><a href="#">csv</a></li>
+			</ul>
+		   <input class="mail_btn" type="image" src="i/mail.gif" />
+		   <input class="info_btn" type="image" src="i/info.gif" />					
+		</div>
+		<!-- Buttons Panel -->
+		
+		 <p>Report name and main objective: The Delivery by Campaign Report allows traffickers to optimize campaign delivery by comparing delivery rates and expected loss of revenues of live campaigns and more test over here so it continues a bit more.</p>
+
+		<!-- Report Values -->
+		<div class="frame" id="report_values">
+		   <!-- Corners -->
+		   <div class="tc"><div class="tl"><div class="tr"></div></div></div><div class="inframe">
+		   <!-- Corners -->
+
+		   <h3 class="btn"><strong>Report Values</strong></h3>
+			
+		   <!-- Hidden Content -->
+		   <div class="box">
+				<p><strong>Agency:</strong> Ogilvy<br/>
+				<strong>Advertiser:</strong> Nike<br />
+				<strong>Campaign Name:</strong> Campaign1 Nike Summer 2009<br />
+				<strong>Ad-space:</strong> Multiple ad-spaces</p>
+		   </div>
+
+		   <!-- Corners -->
+		   </div><div class="bc"><div class="bl"><div class="br"></div></div></div>
+		   <!-- Corners -->
+		</div>
+		<!-- Report Values -->
+			
+		<h4>Campaign Summary</h4>
+		<!-- Campaign Summary -->
+		<div class="frame">
+		   <!-- Corners -->
+		   <div class="tc"><div class="tl"><div class="tr"></div></div></div><div class="inframe">
+		   <!-- Corners -->
+
+		   <table>
+			<tr>
+				<th>Advertiser</th>
+				<th>Campaign</th>
+				<th>Channel</th>
+				<th class="marked">Booked Impressions</th>
+				<th class="marked">Delivered Impressions</th>
+				<th class="marked">Clicks</th>
+				<th class="marked">CTR</th>
+				<th class="marked">Revenue</th>
+				<th class="marked">eCPM</th>
+			</tr>
+			<tr>
+				<td>Advertiser1</td>
+				<td>Campaign1</td>
+				<td>Wap</td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			</table>
+
+		   <!-- Corners -->
+		   </div><div class="bc"><div class="bl"><div class="br"></div></div></div>
+		   <!-- Corners -->
+		</div>
+		<!-- Campaign Summary -->
+						
+		<h4>Campaign Details</h4>
+		<!-- Campaign Details -->
+		<div class="frame" id="campaign_details">
+		   <!-- Corners -->
+		   <div class="tc"><div class="tl"><div class="tr"></div></div></div><div class="inframe">
+		   <!-- Corners -->
+
+			<div id="filter"><label>Show only</label><select><option></option></select></div>
+			
+			<img class="graph" src="i/graph.gif" alt="" />
+		   
+			<ul id="report_level">
+				<li class="first">Report level:</li>
+				<li><a href="#">Advertiser</a></li>
+				<li><a href="#">Campaign</a></li>
+				<li><a href="#">Flight</a></li>
+				<li><a href="#">Ad</a></li>
+			</ul>
+		
+			<table class="big_table">
+			<tr>
+				<th>Advertiser</th>
+				<th>Campaign</th>
+				<th>Flight</th>
+				<th>Ad</th>
+				<th class="marked">Booked Impressions</th>
+				<th class="marked">Delivered Impressions</th>
+				<th class="marked">Clicks</th>
+				<th class="marked">CTR</th>
+				<th class="marked">Revenue</th>
+				<th class="marked">eCPM</th>
+				<th class="marked">column</th>
+									<th class="marked">column</th>
+									<th class="marked">column</th>
+			</tr>
+			<tr>
+				<td class="expand">Advertiser1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			<tr>
+				<td class="expand">Advertiser1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			<tr class="sub1">
+				<td class="expand">Advertiser1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			<tr class="sub2">
+				<td></td>
+				<td class="expand">Campaign1</td>
+				<td></td>
+				<td></td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			<tr class="sub3">
+				<td></td>
+				<td></td>
+				<td class="expand">Flight1</td>
+				<td></td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			<tr class="sub4">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="expand">Ad1</td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			<tr>
+				<td class="expand">Advertiser1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>
+			<tr class="totals">
+				<td class="first" colspan="4">Campaign Totals</td>
+				<td>21,000,000</td>
+				<td>21,000,000</td>
+				<td>1,000,000</td>
+				<td>5.66%</td>
+				<td>$390,000</td>
+				<td>$20</td>		                                         	
+			</tr>				
+			</table>
+
+		   <!-- Corners -->
+		   </div><div class="bc"><div class="bl"><div class="br"></div></div></div>
+		   <!-- Corners -->
+
+		</div>
+		<!-- Campaign Details - End -->
+
+	  </div>
+   </body>
+</html>

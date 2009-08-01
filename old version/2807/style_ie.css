@@ -1,0 +1,13 @@
+/* IE MAkes Problems !!! */
+#campaign_details .tc,
+#campaign_details .tl,
+#campaign_details .tr,
+#campaign_details .bc,
+#campaign_details .bl,
+#campaign_details .br,
+#campaign_details,
+#campaign_details.inframe {
+ display: inline;
+	zoom: 1;
+	overflow: visible !important;
+}
